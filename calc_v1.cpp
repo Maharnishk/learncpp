@@ -15,6 +15,10 @@ void division(int a, int b){
    int result = a/b;
    std::cout << result << std :: endl;
 }
+void Mod(int a, int b){
+   int result = a%b;
+   std::cout << result << std :: endl;
+}
 int main(){
     int option;
     int num1 , num2;
@@ -23,6 +27,8 @@ int main(){
     std::cout << "option 2 = substraction"<< std :: endl;
     std::cout << "option 3 = multiplication"<< std :: endl;
     std::cout << "option 4 = division"<< std :: endl;
+    std::cout << "option 5 = modulus"<< std :: endl;
+
     std::cout << "ur option ->";
     std :: cin>>option;
     std::cout << "Enter ur number 1 : "<< std :: endl;
@@ -45,9 +51,13 @@ int main(){
     {
         division(num1,num2);
     }
+     else if(option==5)
+    {
+        Mod(num1,num2);
+    }
     else 
     {
-        std :: cout << "operator not found try 1,2,3,4 : "<< std :: endl;
+        std :: cout << "operator not found try 1,2,3,4,5 : "<< std :: endl;
     }
    
     }
