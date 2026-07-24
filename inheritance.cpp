@@ -10,8 +10,8 @@ float X, Y;
 
 };
 class player : public entity{
-const char* name;
-void print_name(){
+public:
+void print_name(const char* name){
     std::cout<< name<< std :: endl;
 }
 };
@@ -20,5 +20,5 @@ int main(){
     player p ;
     p.move(34,34);
     p.X=2;
-   
+    p.print_name("CHICKEN");
 }
